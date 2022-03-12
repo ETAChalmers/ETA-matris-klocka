@@ -23,4 +23,4 @@ Har använt standard C men skrivet i Arduino IDE:n och nåt Arduino biblotek tro
 
 Har även gjort en mod i Arduino bootloadern med högre Brown out reset spänning. Det spelar nog ingen roll, det var ett försök att få den att sluta hänga sig ibland. CAN trancivern har en tendens att göra det tyvärr.
 
-LED matrisdisplayerna är egentligen bara shiftregister, jag klockade in displaydatan med SPI enheten i Atmega328 processorn (på arduinon). Men eftersom displayerna har 2 data med en gemensam klocka, så har jag seriekopplat unde och övre halvan. Du kan se att drt går en ensam ledare från sista displayen ut tillbaka till första displayen in. Tror det är 3 st 8*8 pixlar displayer.
+LED matrisdisplayerna är egentligen bara shiftregister, klockade in displaydatan med SPI enheten i Atmega328 processorn (på arduinon). Men eftersom displayerna har 2 data med en gemensam klocka, är  unde och övre halvan seriekopplad. Det går en ensam ledare från sista displayen ut tillbaka till första displayen in. Tror det är 3 st 8*8 pixlar displayer.
